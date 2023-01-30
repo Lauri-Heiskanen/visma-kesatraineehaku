@@ -1,0 +1,5 @@
+I understood the assignment as being tasked with creating a class that contains the means to extract and validate the scheme, path and parameters from a URI-string.
+I wasn't sure whether 'Requirements for the parameters' ment ONLY parameters listed, having ATLEAST parameters listed or having EXACTLY parameters listed. I implemented checking for exactly.
+The biggest challenge for me was understanding what it ment to have a class return something. In the end I created a class that contains a function 'parse_from_string' that does as described in the task.
+The validation of the parameters is done in two parts and isn't contained completely in the 'validate_parameters' function. The way it is now 'validate_parameters' only validates the keys and type validation is handled in 'parse_from_string'
+I was unsure of how to handle errors in a project like this since it depends on the software that calls the function. I decided to raise an error with an explanatory message of what went wrong.
